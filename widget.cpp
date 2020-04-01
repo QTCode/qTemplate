@@ -16,7 +16,7 @@ public:
 WidgetPrivate::WidgetPrivate(Widget* object)
 	:q_ptr(object)
 {
-
+	::system("ipconfig");
 }
 
 WidgetPrivate::~WidgetPrivate()
