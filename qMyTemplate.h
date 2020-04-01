@@ -1,9 +1,8 @@
 ﻿#pragma once
-#include "VisualCoreExport.h"
 #include <QObject>
 
 class qMyTemplatePrivate;
-class VISUAL_VISUALCORE_EXPORT qMyTemplate : public QObject
+class  qMyTemplate : public QObject
 {
 	Q_OBJECT
 public:
