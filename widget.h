@@ -1,5 +1,6 @@
 #pragma once
 #include <QWidget>
+#include <QProcess>
 
 class WidgetPrivate;
 class  Widget : public QWidget
@@ -9,7 +10,14 @@ public:
 	Widget(QWidget* parent = 0);
 	~Widget();
 
-public slots:
+protected slots:
+
+	void nnuNetOutput();
+	void nnuNetError();
+	void nnuNetCmdFinished(int exitCode, QProcess::ExitStatus exitStatus);
+	void startCmd();
+
+	bool ExecDosCmd();
 
 signals:
 
