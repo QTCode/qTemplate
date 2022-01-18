@@ -19,6 +19,8 @@ add_executable(helloworld
     qMyTemplate.cpp
     qMyTemplateWidget.ui
     qMyTemplateWidget.cpp
+    mainwindow.ui
+    mainwindow.cpp
 
     main.cpp
     #resources.qrc
